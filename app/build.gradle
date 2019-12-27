@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion 29
@@ -16,6 +17,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    //因注解器而添加
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -38,5 +44,8 @@ dependencies {
     //状态栏
     implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
 
+    //注解器
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
 
 }

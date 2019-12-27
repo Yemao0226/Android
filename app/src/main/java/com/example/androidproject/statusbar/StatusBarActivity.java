@@ -14,10 +14,10 @@ import com.gyf.immersionbar.ImmersionBar;
  * ***************************************
  * Author:yemao
  * Time:2019/12/25  14:48
- * @param //这里提供了两种方法,一种是自己写的匹配方案,另一种是引用的三方
+ * 状态栏:这里提供了两种方法,一种是自己写的匹配方案,另一种是引用的三方
  * ***************************************
  */
-public class StatusBar extends AppCompatActivity implements View.OnClickListener {
+public class StatusBarActivity extends AppCompatActivity implements View.OnClickListener {
 
   CardView immersiveCardView,immersiveCardViewThird;
 

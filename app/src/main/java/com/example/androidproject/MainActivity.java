@@ -1,17 +1,19 @@
 package com.example.androidproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
-import com.example.androidproject.statusbar.StatusBar;
+
+import com.example.androidproject.butterknife.ButterKnifeActivity;
+import com.example.androidproject.statusbar.StatusBarActivity;
 import com.example.androidproject.utils.StatusBarUtils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-  private LinearLayout immersiveStatusBar;
+  private CardView butterKnife,statusBar;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -29,21 +31,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
    * 初始化组件信息
    * */
   private void initView() {
-    immersiveStatusBar = findViewById(R.id.main_immersiveStatusBar);
+    statusBar = findViewById(R.id.main_statusBar);
+    butterKnife = findViewById(R.id.main_butterKnife);
   }
 
   /**
    * 初始化各个组件的侦听
    * */
   private void initListener() {
-    immersiveStatusBar.setOnClickListener(this);
+    butterKnife.setOnClickListener(this);
+    statusBar.setOnClickListener(this);
   }
 
   @Override
   public void onClick(View view) {
     switch (view.getId()){
-      case R.id.main_immersiveStatusBar:
-        startActivity(new Intent(this, StatusBar.class));
+      case R.id.main_butterKnife:
+        startActivity(new Intent(this, ButterKnifeActivity.class));
+        break;
+      case R.id.main_statusBar:
+        startActivity(new Intent(this, StatusBarActivity.class));
         break;
     }
   }

@@ -8,6 +8,7 @@ import com.gyf.immersionbar.ImmersionBar;
  * ***************************************
  * Author:yemao
  * Time:2019/12/27  15:20
+ * 状态栏工具类
  * ***************************************
  */
 public class StatusBarUtils {
