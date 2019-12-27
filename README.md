@@ -24,7 +24,7 @@
        * @param color
        * @param dark
        */
-      public static void setStatusBar(AppCompatActivity activity, String color, boolean dark) {
+     public static void setStatusBar(AppCompatActivity activity, String color, boolean dark) {
         Window window = activity.getWindow();
         window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -40,7 +40,7 @@
         window.setAttributes(lp);
         setStatusBarLightMode(activity, Color.parseColor(color));
         setLightStatusBar(activity,dark);
-      }
+     }
 
   直接调用该方法即可，详细的使用请自行阅读代码理解
 
