@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_dp_50"
+        android:gravity="center"
+        android:background="@color/colorTitle"
+        android:layout_marginBottom="@dimen/sw_dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_statusBar_choose_statusBar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTitleText">
+        </TextView>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_dp_50"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/sw_dp_4"
+        android:layout_margin="@dimen/sw_dp_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_statusBar_normal_statusBar"
+                android:textSize="15sp"
+                android:textColor="@color/colorMenuText">
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/status_bar_immersive"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_dp_50"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/sw_dp_4"
+        android:layout_margin="@dimen/sw_dp_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_statusBar_immersive_statusBar"
+                android:textSize="15sp"
+                android:textColor="@color/colorMenuText">
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/status_bar_immersive_third"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_dp_50"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/sw_dp_4"
+        android:layout_margin="@dimen/sw_dp_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_statusBar_immersive_statusBar_third"
+                android:textSize="15sp"
+                android:textColor="@color/colorMenuText">
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_statusBar_remark"
+        android:textSize="15sp"
+        android:textColor="@color/colorCareful"
+        android:layout_marginTop="@dimen/sw_dp_10"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+</LinearLayout>

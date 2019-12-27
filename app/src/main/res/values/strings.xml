@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">AndroidProject</string>
+    <string name="app_name">AndroidJavaProject</string>
+    <string name="app_title">功能菜单</string>
+    <string name="app_menu_statusBar">状态栏</string>
+
+    <!--menu-->
+    <string name="app_menu_immersiveStatusBar">沉浸式状态栏</string>
+
+    <!--StatusBar-->
+    <string name="app_statusBar_choose_statusBar">状态栏样式选择</string>
+    <string name="app_statusBar_normal_statusBar">普通状态栏(默认进来看到的状态栏样式)</string>
+    <string name="app_statusBar_immersive_statusBar">沉浸式状态栏</string>
+    <string name="app_statusBar_remark">请注意观察标题栏样式哦</string>
+    <string name="app_statusBar_immersive_statusBar_third">沉浸式状态栏(引用三方)</string>
 </resources>
