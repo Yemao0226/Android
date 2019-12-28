@@ -20,8 +20,10 @@ import com.gyf.immersionbar.ImmersionBar;
  */
 public class StatusBarActivity extends AppCompatActivity implements View.OnClickListener {
 
-  CardView immersiveCardView,immersiveCardViewThird;
+  CardView immersiveCardView,immersiveCardViewThird,immersiveCardViewRecall;
   private LinearLayout statusBarOut;
+  private ImmersionBar mImmersionBar;
+  private boolean isFirst = true;
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
   private void initView() {
     immersiveCardView = findViewById(R.id.status_bar_immersive);
     immersiveCardViewThird = findViewById(R.id.status_bar_immersive_third);
+    immersiveCardViewRecall = findViewById(R.id.status_bar_recall);
     statusBarOut =findViewById(R.id.statusBar_out);
   }
 
@@ -48,6 +51,7 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
   private void initListener() {
     immersiveCardView.setOnClickListener(this);
     immersiveCardViewThird.setOnClickListener(this);
+    immersiveCardViewRecall.setOnClickListener(this);
     statusBarOut.setOnClickListener(this);
   }
 
@@ -58,10 +62,22 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
         setStatusBar2Immersive("#00A8E1",false);
         break;
       case R.id.status_bar_immersive_third:
-        setStatusBar2ImmersiveWithThird(R.color.colorTitle,false);
+          setStatusBar2ImmersiveWithThird(R.color.colorTitle,false);
         break;
       case R.id.statusBar_out:
         finish();
+        break;
+      case R.id.status_bar_recall:
+        if(mImmersionBar!=null){
+          mImmersionBar.reset()
+            .fitsSystemWindows(true)
+            .init();
+        }else {
+          mImmersionBar = ImmersionBar.with(this);
+          mImmersionBar.reset()
+            .fitsSystemWindows(true)
+            .init();
+        }
         break;
     }
   }
@@ -82,8 +98,8 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
    * 可以根据自己的需求去设置具体的参数
    */
   private void setStatusBar2ImmersiveWithThird(int colorValue, boolean isDark) {
-    ImmersionBar.with(this)
-      .statusBarColor(colorValue)
+    mImmersionBar = ImmersionBar.with(this);
+    mImmersionBar.statusBarColor(colorValue)
       .statusBarDarkFont(isDark)
       .fitsSystemWindows(true)
       .init();
