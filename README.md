@@ -155,7 +155,7 @@
          android:layout_height="wrap_content">
       </com.example.androidproject.alignedtext.EnglishTextView>
 
-#### 四、自定义文本框
+#### 四、权限请求
 分为两种：1、自己封装权限请求; 2、引用三方库
 
    1、自己封装：
