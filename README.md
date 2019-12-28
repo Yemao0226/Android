@@ -12,6 +12,7 @@
 1.  解决刘海屏，挖孔屏等状态栏问题
 2.  引入ButterKnife注解器
 3.  自定义对齐文本框
+4.  权限请求
 
 #### 一、状态栏
  两种方式（1、自己写的适配 2、引用三方）
@@ -153,6 +154,25 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content">
       </com.example.androidproject.alignedtext.EnglishTextView>
+
+#### 四、自定义文本框
+分为两种：1、自己封装权限请求; 2、引用三方库
+    1、自己封装：
+
+    PermissionUtils.checkPermission(this);
+
+    2、引用三方：
+
+    dependencies
+    {
+        // For developers using AndroidX in their applications
+        implementation 'pub.devrel:easypermissions:3.0.0'
+
+        // For developers using the Android Support Library
+        implementation 'pub.devrel:easypermissions:2.0.1'
+    }
+
+
 
 #### 附录
 如果在使用中有任何疑问，请联系微信Ym02261996，申请时请备注说明理由

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_dp_50"
+        android:background="@color/colorTitle"
+        android:layout_marginBottom="@dimen/sw_dp_10">
+
+        <LinearLayout
+            android:id="@+id/main_permission_out"
+            android:layout_width="@dimen/sw_dp_50"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sw_dp_20"
+                android:src="@drawable/out">
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_permission"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTitleText">
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_permission_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_dp_50"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/sw_dp_4"
+        android:layout_margin="@dimen/sw_dp_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_permission_normal"
+                android:textSize="15sp"
+                android:textColor="@color/colorMenuText">
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_permission_third"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_dp_50"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/sw_dp_4"
+        android:layout_margin="@dimen/sw_dp_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_permission_third"
+                android:textSize="15sp"
+                android:textColor="@color/colorMenuText">
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

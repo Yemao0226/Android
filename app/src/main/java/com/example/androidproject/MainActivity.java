@@ -3,12 +3,10 @@ package com.example.androidproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import androidx.cardview.widget.CardView;
-
 import com.example.androidproject.alignedtext.AlignedTextActivity;
 import com.example.androidproject.base.BaseActivity;
 import com.example.androidproject.butterknife.ButterKnifeActivity;
+import com.example.androidproject.permission.PermissionActivity;
 import com.example.androidproject.statusbar.StatusBarActivity;
 import butterknife.OnClick;
 
@@ -24,7 +22,7 @@ public class MainActivity extends BaseActivity {
     return R.layout.activity_main;
   }
 
-  @OnClick({R.id.main_butterKnife, R.id.main_statusBar,R.id.main_alignedText})
+  @OnClick({R.id.main_butterKnife, R.id.main_statusBar,R.id.main_alignedText,R.id.main_permission})
   public void onViewClicked(View view) {
     switch (view.getId()) {
       case R.id.main_butterKnife:
@@ -35,6 +33,9 @@ public class MainActivity extends BaseActivity {
         break;
       case R.id.main_alignedText:
         startActivity(new Intent(this, AlignedTextActivity.class));
+        break;
+      case R.id.main_permission:
+        startActivity(new Intent(this, PermissionActivity.class));
         break;
     }
   }
