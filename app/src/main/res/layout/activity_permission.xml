@@ -46,17 +46,44 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <include layout="@layout/function_item_img_left"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </include>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_1">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_permission_normal"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorMenuText">
+                </TextView>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/menu_item_img_right"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/app_permission_normal"
-                android:textSize="15sp"
-                android:textColor="@color/colorMenuText">
-            </TextView>
-
+                android:layout_weight="1">
+            </include>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -72,17 +99,44 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <include layout="@layout/function_item_img_left"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </include>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_2">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_permission_third"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorMenuText">
+                </TextView>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/menu_item_img_right"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/app_permission_third"
-                android:textSize="15sp"
-                android:textColor="@color/colorMenuText">
-            </TextView>
-
+                android:layout_weight="1">
+            </include>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

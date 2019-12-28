@@ -15,7 +15,7 @@
 
     <!--StatusBarActivity-->
     <string name="app_statusBar_choose_statusBar">状态栏样式选择</string>
-    <string name="app_statusBar_normal_statusBar">普通状态栏(默认进来看到的状态栏样式)</string>
+    <string name="app_statusBar_normal_statusBar">普通状态栏(默认)</string>
     <string name="app_statusBar_immersive_statusBar">沉浸式状态栏</string>
     <string name="app_statusBar_remark">请注意观察上方状态栏样式哦</string>
     <string name="app_statusBar_recall">取消沉浸式</string>
