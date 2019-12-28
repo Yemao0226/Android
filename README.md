@@ -157,6 +157,7 @@
 
 #### 四、自定义文本框
 分为两种：1、自己封装权限请求; 2、引用三方库
+
     1、自己封装：
 
     PermissionUtils.checkPermission(this);
