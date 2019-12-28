@@ -11,8 +11,9 @@
 
 1.  解决刘海屏，挖孔屏等状态栏问题
 2.  引入ButterKnife注解器
+3.  自定义对齐文本框
 
-#### 状态栏
+#### 一、状态栏
  两种方式（1、自己写的适配 2、引用三方）
 
  1、自己写适配：
@@ -98,7 +99,7 @@
 
 
 
-#### ButterKnife
+#### 二、ButterKnife
 
   1、在gradle中添加
 
@@ -133,6 +134,25 @@
     apply plugin: 'com.jakewharton.butterknife'
 
   4、添加一个自动生成代码的插件：zelezny （通过File->settings->Plugins  下载）
+
+#### 三、自定义文本框
+分为两种:1、暴力切割;2、保留单词完整性
+
+   1、暴力切割型：
+
+      <com.example.androidproject.alignedtext.AlignTextView
+         android:id="@+id/alignedText_align"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+      </com.example.androidproject.alignedtext.AlignTextView>
+
+   2、保留单词完整性：
+
+      <com.example.androidproject.alignedtext.EnglishTextView
+         android:id="@+id/alignedText_English"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+      </com.example.androidproject.alignedtext.EnglishTextView>
 
 #### 附录
 如果在使用中有任何疑问，请联系微信Ym02261996，申请时请备注说明理由

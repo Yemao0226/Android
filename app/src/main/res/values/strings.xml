@@ -2,13 +2,13 @@
     <string name="app_name">AndroidJavaProject</string>
     <string name="app_title">功能菜单</string>
 
-    <!--menu-->
+    <!--Menu-->
     <string name="app_menu_statusBar">状态栏</string>
     <string name="app_menu_immersiveStatusBar">沉浸式状态栏</string>
     <string name="app_menu_butterKnife">注解器</string>
-    <string name="app_menu_butterKnife_">沉浸式状态栏</string>
+    <string name="app_menu_alignedText">对齐的文本</string>
 
-    <!--butterKnife-->
+    <!--ButterKnife-->
     <string name="app_butterKnife_title">注解器</string>
     <string name="app_butterKnife_str">使用注解器真的是太方便了！！！(点我看看)</string>
 
@@ -18,4 +18,17 @@
     <string name="app_statusBar_immersive_statusBar">沉浸式状态栏</string>
     <string name="app_statusBar_remark">请注意观察上方状态栏样式哦</string>
     <string name="app_statusBar_immersive_statusBar_third">沉浸式状态栏(引用三方)</string>
+
+    <!--AlignedText-->
+    <string name="app_alignedText_choose_alignedText">文本框样式选择</string>
+
+    <string name="app_alignedText_normal">普通文本框</string>
+
+    <string name="app_alignedText_alignTextView">切割型文本框</string>
+
+    <string name="app_alignedText_EnglishTextView">保留英文完整性文本框</string>
+
+    <string name="app_alignedText_remark">请注意观察上方各种文本框样式区别,按需求选取</string>
+
+    <string name="app_alignedText_text">During the operation of the Long March 5 rocket engine, the high temperature, narrow space and complex structure of the gas pipeline may lead to the failure of the surrounding electronic and electrical equipment. The high performance nano aerogel insulation felt manufactured by the 306 Aerospace Science and Technology Institute successfully solved this problem.</string>
 </resources>

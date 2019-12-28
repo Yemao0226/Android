@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_dp_50"
+        android:background="@color/colorTitle"
+        android:layout_marginBottom="@dimen/sw_dp_10">
+
+        <LinearLayout
+            android:id="@+id/alignedText_out"
+            android:layout_width="@dimen/sw_dp_50"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sw_dp_20"
+                android:src="@drawable/out">
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_alignedText_choose_alignedText"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTitleText">
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/sw_dp_4"
+        android:layout_margin="@dimen/sw_dp_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_alignedText_normal"
+                android:textSize="15sp"
+                android:textColor="@color/colorMenuText">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/alignedText_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/sw_dp_4"
+        android:layout_margin="@dimen/sw_dp_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_alignedText_alignTextView"
+                android:textSize="15sp"
+                android:textColor="@color/colorMenuText">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.androidproject.alignedtext.AlignTextView
+                    android:id="@+id/alignedText_align"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.androidproject.alignedtext.AlignTextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/sw_dp_4"
+        android:layout_margin="@dimen/sw_dp_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_alignedText_EnglishTextView"
+                android:textSize="15sp"
+                android:textColor="@color/colorMenuText">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.androidproject.alignedtext.EnglishTextView
+                    android:id="@+id/alignedText_English"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.androidproject.alignedtext.EnglishTextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_alignedText_remark"
+        android:textSize="15sp"
+        android:textColor="@color/colorCareful"
+        android:layout_marginTop="@dimen/sw_dp_10"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+</LinearLayout>
