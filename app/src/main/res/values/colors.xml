@@ -6,11 +6,8 @@
 
     <color name="colorTitle">#00A8E1</color>
     <color name="colorTitleText">#FFFFFF</color>
-
     <color name="colorMenuText">#000000</color>
-
     <color name="colorMenuLine">#F2F2F2F2</color>
-
     <color name="colorCareful">#F8666666</color>
 
 </resources>
