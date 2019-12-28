@@ -46,6 +46,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     mUnbinder = ButterKnife.bind(this);
   }
 
+  /**
+   * 获得默认状态栏设置
+   * @return mImmersionBar
+   */
   public ImmersionBar getBaseStatusBar(){
     return mImmersionBar;
   }
@@ -57,6 +61,9 @@ public abstract class BaseActivity extends AppCompatActivity {
     mImmersionBar = StatusBarUtils.setStatusBarWithActivity(this, R.color.colorTitle,false);
   }
 
+  /**
+   * 活动销毁时解绑
+   */
   @Override
   protected void onDestroy() {
     mUnbinder.unbind();
