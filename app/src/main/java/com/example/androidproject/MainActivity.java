@@ -1,30 +1,27 @@
 package com.example.androidproject;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+import com.example.androidproject.base.BaseActivity;
 import com.example.androidproject.butterknife.ButterKnifeActivity;
 import com.example.androidproject.statusbar.StatusBarActivity;
-import com.example.androidproject.utils.StatusBarUtils;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
   private CardView butterKnife,statusBar;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
-
-    //设置当前状态栏
-    StatusBarUtils.setStatusBarWithActivity(this,R.color.colorTitle,false);
-
     initView();
     initListener();
+  }
+
+  @Override
+  protected int getLayoutId() {
+    return R.layout.activity_main;
   }
 
   /**

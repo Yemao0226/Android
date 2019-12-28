@@ -2,6 +2,7 @@ package com.example.androidproject.statusbar;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +21,7 @@ import com.gyf.immersionbar.ImmersionBar;
 public class StatusBarActivity extends AppCompatActivity implements View.OnClickListener {
 
   CardView immersiveCardView,immersiveCardViewThird;
-
+  private LinearLayout statusBarOut;
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
   private void initView() {
     immersiveCardView = findViewById(R.id.status_bar_immersive);
     immersiveCardViewThird = findViewById(R.id.status_bar_immersive_third);
+    statusBarOut =findViewById(R.id.statusBar_out);
   }
 
   /**
@@ -46,6 +48,7 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
   private void initListener() {
     immersiveCardView.setOnClickListener(this);
     immersiveCardViewThird.setOnClickListener(this);
+    statusBarOut.setOnClickListener(this);
   }
 
   @Override
@@ -56,6 +59,9 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
         break;
       case R.id.status_bar_immersive_third:
         setStatusBar2ImmersiveWithThird(R.color.colorTitle,false);
+        break;
+      case R.id.statusBar_out:
+        finish();
         break;
     }
   }
