@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidproject.R;
 import com.example.androidproject.utils.StatusBarUtils;
+import com.gyf.immersionbar.ImmersionBar;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -21,7 +22,7 @@ import butterknife.Unbinder;
  */
 public abstract class BaseActivity extends AppCompatActivity {
   private Unbinder mUnbinder;
-
+  private ImmersionBar  mImmersionBar;
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -45,12 +46,15 @@ public abstract class BaseActivity extends AppCompatActivity {
     mUnbinder = ButterKnife.bind(this);
   }
 
+  public ImmersionBar getBaseStatusBar(){
+    return mImmersionBar;
+  }
 
   /**
    * 设置默认状态栏样式
    */
-  private void setStatusBar() {
-    StatusBarUtils.setStatusBarWithActivity(this, R.color.colorTitle,false);
+  protected void setStatusBar() {
+    mImmersionBar = StatusBarUtils.setStatusBarWithActivity(this, R.color.colorTitle,false);
   }
 
   @Override

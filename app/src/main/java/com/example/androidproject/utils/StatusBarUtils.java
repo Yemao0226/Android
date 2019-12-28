@@ -18,12 +18,13 @@ public class StatusBarUtils {
    * @param colorValue 颜色值
    * @param isDark true黑色字体,false白色字体
    */
-  public static void setStatusBarWithActivity(Activity activity,int colorValue, boolean isDark){
-    ImmersionBar.with(activity)
-      .statusBarColor(colorValue)
+  public static ImmersionBar setStatusBarWithActivity(Activity activity,int colorValue, boolean isDark){
+    ImmersionBar immersionBar = ImmersionBar.with(activity);
+    immersionBar.statusBarColor(colorValue)
       .statusBarDarkFont(isDark)
       .fitsSystemWindows(true)
       .init();
+    return immersionBar;
   }
 
   /**

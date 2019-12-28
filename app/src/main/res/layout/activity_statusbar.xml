@@ -113,6 +113,32 @@
 
     </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/status_bar_recall"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_dp_50"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/sw_dp_4"
+        android:layout_margin="@dimen/sw_dp_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_statusBar_recall"
+                android:textSize="15sp"
+                android:textColor="@color/colorMenuText">
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:layout_width="wrap_content"
