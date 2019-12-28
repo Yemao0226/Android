@@ -160,18 +160,18 @@
 
     1、自己封装：
 
-    PermissionUtils.checkPermission(this);
+        PermissionUtils.checkPermission(this);
 
     2、引用三方：
 
-    dependencies
-    {
-        // For developers using AndroidX in their applications
-        implementation 'pub.devrel:easypermissions:3.0.0'
+        dependencies
+        {
+            // For developers using AndroidX in their applications
+            implementation 'pub.devrel:easypermissions:3.0.0'
 
-        // For developers using the Android Support Library
-        implementation 'pub.devrel:easypermissions:2.0.1'
-    }
+            // For developers using the Android Support Library
+            implementation 'pub.devrel:easypermissions:2.0.1'
+        }
 
 
 
