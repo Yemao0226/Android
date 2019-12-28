@@ -12,10 +12,8 @@
 1.  解决刘海屏，挖孔屏等状态栏问题
 2.  引入ButterKnife注解器
 
-#### 已有功能如何使用
-
-状态栏
-两种方式（1、自己写的适配 2、引用三方）
+#### 状态栏
+ 两种方式（1、自己写的适配 2、引用三方）
 
  1、自己写适配：
 
@@ -100,7 +98,7 @@
 
 
 
-ButterKnife
+#### ButterKnife
 
   1、在gradle中添加
 
@@ -131,8 +129,8 @@ ButterKnife
 
   3、在moudle中添加应用
 
-  apply plugin: 'com.android.library'
-  apply plugin: 'com.jakewharton.butterknife'
+    apply plugin: 'com.android.library'
+    apply plugin: 'com.jakewharton.butterknife'
 
   4、添加一个自动生成代码的插件：zelezny （通过File->settings->Plugins  下载）
 
