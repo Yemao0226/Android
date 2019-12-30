@@ -28,6 +28,7 @@
         <activity android:name=".base.BaseActivity" />
         <activity android:name=".alignedtext.AlignedTextActivity" />
         <activity android:name=".permission.PermissionActivity" />
+        <activity android:name=".recycleView.RecycleViewActivity" />
     </application>
 
 </manifest>

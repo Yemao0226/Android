@@ -8,6 +8,7 @@
     <string name="app_menu_butterKnife">注解器</string>
     <string name="app_menu_alignedText">对齐的文本</string>
     <string name="app_menu_permission">权限请求</string>
+    <string name="app_menu_recycleView">列表展示</string>
 
     <!--ButterKnife-->
     <string name="app_butterKnife_title">注解器</string>

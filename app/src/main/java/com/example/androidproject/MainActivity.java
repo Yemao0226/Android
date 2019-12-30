@@ -7,6 +7,7 @@ import com.example.androidproject.alignedtext.AlignedTextActivity;
 import com.example.androidproject.base.BaseActivity;
 import com.example.androidproject.butterknife.ButterKnifeActivity;
 import com.example.androidproject.permission.PermissionActivity;
+import com.example.androidproject.recycleView.RecycleViewActivity;
 import com.example.androidproject.statusbar.StatusBarActivity;
 import butterknife.OnClick;
 
@@ -22,7 +23,8 @@ public class MainActivity extends BaseActivity {
     return R.layout.activity_main;
   }
 
-  @OnClick({R.id.main_butterKnife, R.id.main_statusBar,R.id.main_alignedText,R.id.main_permission})
+  @OnClick({R.id.main_butterKnife, R.id.main_statusBar,R.id.main_alignedText,R.id.main_permission,
+    R.id.main_recycleView})
   public void onViewClicked(View view) {
     switch (view.getId()) {
       case R.id.main_butterKnife:
@@ -36,6 +38,9 @@ public class MainActivity extends BaseActivity {
         break;
       case R.id.main_permission:
         startActivity(new Intent(this, PermissionActivity.class));
+        break;
+      case R.id.main_recycleView:
+        startActivity(new Intent(this, RecycleViewActivity.class));
         break;
     }
   }

@@ -6,6 +6,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.androidproject.R;
 import com.example.androidproject.utils.StatusBarUtils;
+import com.example.androidproject.utils.StringUtils;
 import com.gyf.immersionbar.ImmersionBar;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -24,7 +25,7 @@ public abstract class BaseActivity extends AppCompatActivity {
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     ActivityCollector.addActivity(this);
-    Log.e("---------------------" , "this is "+getClass().getName());
+    Log.e("---------------------" , "this is "+ StringUtils.getActivityName(getClass().getName()));
     setContentView(getLayoutId());//把contentView的其它加入
     bindButterKnife();
     setStatusBar();
