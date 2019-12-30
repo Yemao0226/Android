@@ -13,6 +13,7 @@
 2.  引入ButterKnife注解器
 3.  自定义对齐文本框
 4.  权限请求
+5.  RecycleView的使用
 
 #### 一、状态栏
  两种方式（1、自己写的适配 2、引用三方）
@@ -173,7 +174,8 @@
          implementation 'pub.devrel:easypermissions:2.0.1'
       }
 
-
+#### 五、RecycleView
+未完待续...
 
 #### 附录
 如果在使用中有任何疑问，请联系微信Ym02261996，申请时请备注说明理由
