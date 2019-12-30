@@ -1,16 +1,12 @@
 package com.example.androidproject.base;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.androidproject.R;
 import com.example.androidproject.utils.StatusBarUtils;
 import com.gyf.immersionbar.ImmersionBar;
-
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
@@ -18,6 +14,7 @@ import butterknife.Unbinder;
  * ***************************************
  * Author:yemao
  * Time:2019/12/28  10:09
+ * 基础Activity
  * ***************************************
  */
 public abstract class BaseActivity extends AppCompatActivity {
