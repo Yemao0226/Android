@@ -4,35 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/sw_dp_50"
-        android:background="@color/colorTitle"
-        android:layout_marginBottom="@dimen/sw_dp_10">
-
-        <LinearLayout
-            android:id="@+id/butterKnife_out"
-            android:layout_width="@dimen/sw_dp_50"
-            android:layout_height="match_parent"
-            android:gravity="center">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/sw_dp_20"
-                android:src="@drawable/out">
-            </ImageView>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_butterKnife_title"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_centerInParent="true"
-            android:textColor="@color/colorTitleText">
-        </TextView>
-
-    </RelativeLayout>
+    <include layout="@layout/normal_top_bar"/>
 
     <LinearLayout
         android:layout_width="match_parent"

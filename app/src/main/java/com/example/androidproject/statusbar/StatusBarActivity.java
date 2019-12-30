@@ -3,12 +3,14 @@ package com.example.androidproject.statusbar;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.example.androidproject.R;
+import com.example.androidproject.utils.ActivityTitleUtils;
 import com.gyf.immersionbar.ImmersionBar;
 
 /**
@@ -24,6 +26,7 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
   private LinearLayout statusBarOut;
   private ImmersionBar mImmersionBar;
   private boolean isFirst = true;
+  private TextView titleText;
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,6 +36,8 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
     initView();
 
     initListener();
+
+    ActivityTitleUtils.setActivityTitle(titleText,R.string.app_statusBar_choose_statusBar);
   }
 
   /**
@@ -42,7 +47,8 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
     immersiveCardView = findViewById(R.id.status_bar_immersive);
     immersiveCardViewThird = findViewById(R.id.status_bar_immersive_third);
     immersiveCardViewRecall = findViewById(R.id.status_bar_recall);
-    statusBarOut =findViewById(R.id.statusBar_out);
+    statusBarOut =findViewById(R.id.normal_out_img);
+    titleText = findViewById(R.id.normal_title_text);
   }
 
   /**
@@ -64,7 +70,7 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
       case R.id.status_bar_immersive_third:
           setStatusBar2ImmersiveWithThird(R.color.colorTitle,false);
         break;
-      case R.id.statusBar_out:
+      case R.id.normal_out_img:
         finish();
         break;
       case R.id.status_bar_recall:

@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.androidproject.R;
 import com.example.androidproject.base.BaseActivity;
 import com.example.androidproject.recycleView.adapter.NormalAdapter;
+import com.example.androidproject.utils.ActivityTitleUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import butterknife.BindView;
@@ -47,7 +49,7 @@ public class RecycleViewActivity extends BaseActivity {
    * 初始化数据源
    */
   private void initData() {
-    normalTitleText.setText(R.string.app_menu_recycleView);
+    ActivityTitleUtils.setActivityTitle(normalTitleText,R.string.app_menu_recycleView);
     setRecycleViewData();
   }
 

@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 
 import com.example.androidproject.R;
 import com.example.androidproject.base.BaseActivity;
+import com.example.androidproject.utils.ActivityTitleUtils;
 
 import butterknife.BindString;
 import butterknife.BindView;
@@ -26,11 +27,10 @@ public class ButterKnifeActivity extends BaseActivity {
 
   @BindView(R.id.butterKnife_text)
   TextView butterKnifeText;
-  @BindView(R.id.butterKnife_out)
-  LinearLayout butterKnifeOut;
-
   @BindString(R.string.app_butterKnife_str)
   String butterKnifeStr;
+  @BindView(R.id.normal_title_text)
+  TextView normalTitleText;
 
   /**
    * 因为已经在BaseActivity中绑定了ButterKnife所以这里我注释了
@@ -58,13 +58,14 @@ public class ButterKnifeActivity extends BaseActivity {
    * 初始化数据源
    */
   private void initData() {
+    ActivityTitleUtils.setActivityTitle(normalTitleText,R.string.app_butterKnife_title);
     butterKnifeText.setText(butterKnifeStr);
   }
 
-  @OnClick({R.id.butterKnife_out, R.id.butterKnife_text})
+  @OnClick({R.id.normal_out_img, R.id.butterKnife_text})
   public void onViewClicked(View view) {
     switch (view.getId()) {
-      case R.id.butterKnife_out:
+      case R.id.normal_out_img:
         finish();
         break;
       case R.id.butterKnife_text:
