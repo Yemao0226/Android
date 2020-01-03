@@ -29,6 +29,7 @@
         <activity android:name=".alignedtext.AlignedTextActivity" />
         <activity android:name=".permission.PermissionActivity" />
         <activity android:name=".recycleView.RecycleViewActivity" />
+        <activity android:name=".recycleView.RecycleViewMenuActivity" />
     </application>
 
 </manifest>

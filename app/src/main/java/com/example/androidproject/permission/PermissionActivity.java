@@ -46,6 +46,11 @@ public class PermissionActivity extends BaseActivity implements EasyPermissions.
     return R.layout.activity_permission;
   }
 
+  @Override
+  protected void initData() {
+
+  }
+
   @OnClick({R.id.normal_out_img, R.id.main_permission_normal, R.id.main_permission_third})
   public void onViewClicked(View view) {
     switch (view.getId()) {

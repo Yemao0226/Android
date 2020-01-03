@@ -46,7 +46,6 @@ public class ButterKnifeActivity extends BaseActivity {
     //ButterKnife.bind(this);
 
     //Unbinder unbinder;  用于解绑  unbinder.unbind();
-    initData();
   }
 
   @Override
@@ -57,7 +56,7 @@ public class ButterKnifeActivity extends BaseActivity {
   /**
    * 初始化数据源
    */
-  private void initData() {
+  protected void initData() {
     ActivityTitleUtils.setActivityTitle(normalTitleText,R.string.app_butterKnife_title);
     butterKnifeText.setText(butterKnifeStr);
   }

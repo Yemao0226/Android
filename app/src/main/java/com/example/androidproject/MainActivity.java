@@ -23,6 +23,11 @@ public class MainActivity extends BaseActivity {
     return R.layout.activity_main;
   }
 
+  @Override
+  protected void initData() {
+
+  }
+
   @OnClick({R.id.main_butterKnife, R.id.main_statusBar,R.id.main_alignedText,R.id.main_permission,
     R.id.main_recycleView})
   public void onViewClicked(View view) {

@@ -37,7 +37,6 @@ public class RecycleViewActivity extends BaseActivity {
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    initData();
   }
 
   @Override
@@ -48,7 +47,7 @@ public class RecycleViewActivity extends BaseActivity {
   /**
    * 初始化数据源
    */
-  private void initData() {
+  protected void initData() {
     ActivityTitleUtils.setActivityTitle(normalTitleText,R.string.app_menu_recycleView);
     setRecycleViewData();
   }

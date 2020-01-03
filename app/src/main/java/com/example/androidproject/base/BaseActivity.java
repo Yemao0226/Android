@@ -29,6 +29,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     setContentView(getLayoutId());//把contentView的其它加入
     bindButterKnife();
     setStatusBar();
+    initData();
   }
 
   /**
@@ -36,6 +37,11 @@ public abstract class BaseActivity extends AppCompatActivity {
    * @return
    */
   protected abstract int getLayoutId();
+
+  /**
+   * 初始化数据
+   */
+  protected abstract void initData();
 
   /**
    * 绑定ButterKnife

@@ -34,7 +34,6 @@ public class AlignedTextActivity extends BaseActivity {
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    initData();
   }
 
   @Override
@@ -42,7 +41,7 @@ public class AlignedTextActivity extends BaseActivity {
     return R.layout.activity_alignedtext;
   }
 
-  private void initData() {
+  protected void initData() {
     ActivityTitleUtils.setActivityTitle(normalTitleText,R.string.app_alignedText_choose_alignedText);
     alignedTextNormal.setText(R.string.app_alignedText_text);
     alignedTextAlign.setText(R.string.app_alignedText_text);
