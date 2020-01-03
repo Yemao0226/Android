@@ -33,6 +33,8 @@ public class RecycleViewMenuActivity extends BaseActivity {
   @BindView(R.id.recycleView_menu_rv)
   RecyclerView recycleViewMenuRv;
 
+  private static int NodeRecycleCode = 1;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -68,7 +70,9 @@ public class RecycleViewMenuActivity extends BaseActivity {
     normalAdapter.setOnItemClickListener(new NormalAdapter.OnItemClickListener() {
       @Override
       public void onItemClick(View view, int Position) {
-
+        if(Position==NodeRecycleCode){
+          readyGo(NodeActivity.class);
+        }
       }
     });
   }

@@ -30,6 +30,7 @@
         <activity android:name=".permission.PermissionActivity" />
         <activity android:name=".recycleView.RecycleViewActivity" />
         <activity android:name=".recycleView.RecycleViewMenuActivity" />
+        <activity android:name=".recycleView.NodeActivity" />
     </application>
 
 </manifest>

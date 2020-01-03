@@ -1,5 +1,7 @@
 package com.example.androidproject.base;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.annotation.Nullable;
@@ -72,5 +74,44 @@ public abstract class BaseActivity extends AppCompatActivity {
   protected void onDestroy() {
     mUnbinder.unbind();
     super.onDestroy();
+  }
+
+  /**
+   * 跳转页面
+   * @param clz
+   * @param <T>
+   */
+  protected <T extends Activity> void readyGo(Class<T> clz) {
+    readyGo(clz, null);
+  }
+
+  protected <T extends Activity> void readyGo(Class<T> clz, Bundle bundle) {
+    Intent intent = new Intent(this, clz);
+    if (bundle != null) {
+      intent.putExtras(bundle);
+    }
+    startActivity(intent);
+  }
+
+  protected <T extends Activity> void readyGoThenKill(Class<T> clz, Bundle bundle) {
+    readyGo(clz, bundle);
+    finish();
+  }
+
+  protected <T extends Activity> void readyGoThenKill(Class<T> clz) {
+    readyGo(clz, null);
+    finish();
+  }
+
+  protected <T extends Activity> void readyGoForResult(Class<T> clz, Bundle bundle, int code) {
+    Intent intent = new Intent(this, clz);
+    if (bundle != null) {
+      intent.putExtras(bundle);
+    }
+    startActivityForResult(intent, code);
+  }
+
+  protected <T extends Activity> void readyGoForResult(Class<T> clz, int code) {
+    readyGoForResult(clz, null, code);
   }
 }

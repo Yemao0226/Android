@@ -1,6 +1,5 @@
 package com.example.androidproject;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import com.example.androidproject.alignedtext.AlignedTextActivity;
@@ -33,19 +32,19 @@ public class MainActivity extends BaseActivity {
   public void onViewClicked(View view) {
     switch (view.getId()) {
       case R.id.main_butterKnife:
-        startActivity(new Intent(this, ButterKnifeActivity.class));
+        readyGo(ButterKnifeActivity.class);
         break;
       case R.id.main_statusBar:
-        startActivity(new Intent(this, StatusBarActivity.class));
+        readyGo(StatusBarActivity.class);
         break;
       case R.id.main_alignedText:
-        startActivity(new Intent(this, AlignedTextActivity.class));
+        readyGo(AlignedTextActivity.class);
         break;
       case R.id.main_permission:
-        startActivity(new Intent(this, PermissionActivity.class));
+        readyGo(PermissionActivity.class);
         break;
       case R.id.main_recycleView:
-        startActivity(new Intent(this, RecycleViewMenuActivity.class));
+        readyGo(RecycleViewMenuActivity.class);
         break;
     }
   }
