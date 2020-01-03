@@ -7,7 +7,7 @@ import com.example.androidproject.alignedtext.AlignedTextActivity;
 import com.example.androidproject.base.BaseActivity;
 import com.example.androidproject.butterknife.ButterKnifeActivity;
 import com.example.androidproject.permission.PermissionActivity;
-import com.example.androidproject.recycleView.RecycleViewActivity;
+import com.example.androidproject.recycleView.RecycleViewMenuActivity;
 import com.example.androidproject.statusbar.StatusBarActivity;
 import butterknife.OnClick;
 
@@ -45,7 +45,7 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this, PermissionActivity.class));
         break;
       case R.id.main_recycleView:
-        startActivity(new Intent(this, RecycleViewActivity.class));
+        startActivity(new Intent(this, RecycleViewMenuActivity.class));
         break;
     }
   }

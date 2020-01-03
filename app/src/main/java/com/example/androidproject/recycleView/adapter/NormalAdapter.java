@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -33,7 +34,7 @@ public class NormalAdapter extends RecyclerView.Adapter<NormalAdapter.ViewHolder
   static class ViewHolder extends RecyclerView.ViewHolder {
 
     TextView normalText;
-    LinearLayout normalLayout;
+    RelativeLayout normalLayout;
 
     public ViewHolder(@NonNull View itemView) {
       super(itemView);

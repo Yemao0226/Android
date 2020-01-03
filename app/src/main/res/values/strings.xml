@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidJavaProject</string>
+    <string name="app_name">这是个好玩的东西</string>
     <string name="app_title">功能菜单</string>
 
     <!--Menu-->
@@ -9,6 +9,7 @@
     <string name="app_menu_alignedText">对齐的文本</string>
     <string name="app_menu_permission">权限请求</string>
     <string name="app_menu_recycleView">列表展示</string>
+    <string name="app_menu_recycleView_menu">多种列表展示</string>
 
     <!--ButterKnife-->
     <string name="app_butterKnife_title">注解器</string>

@@ -10,11 +10,16 @@
         app:cardCornerRadius="@dimen/sw_dp_4"
         android:layout_margin="@dimen/sw_dp_5"
         >
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/recycleView_normal_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+            android:layout_height="match_parent">
+
+            <include layout="@layout/function_item_img_left"
+                android:layout_centerVertical="true"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content" />
+
             <TextView
                 android:id="@+id/recycleView_normal_text"
                 android:layout_width="wrap_content"
@@ -22,8 +27,15 @@
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
-                android:textColor="@color/colorMenuText">
+                android:textColor="@color/colorMenuText"
+                android:layout_centerInParent="true">
             </TextView>
-        </LinearLayout>
+
+            <include layout="@layout/menu_item_img_right"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            </include>
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>
