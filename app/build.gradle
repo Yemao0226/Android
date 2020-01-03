@@ -50,4 +50,8 @@ dependencies {
 
     //权限请求
     implementation 'pub.devrel:easypermissions:3.0.0'
+
+    //列表
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+
 }

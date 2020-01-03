@@ -35,4 +35,8 @@
     <string name="app_permission">权限请求</string>
     <string name="app_permission_normal">普通权限请求</string>
     <string name="app_permission_third">权限请求(引用三方)</string>
+
+    <!--RecycleView-->
+    <string name="app_recycleView_node">抽屉式列表</string>
+
 </resources>

@@ -33,7 +33,7 @@ public class RecycleViewMenuActivity extends BaseActivity {
   @BindView(R.id.recycleView_menu_rv)
   RecyclerView recycleViewMenuRv;
 
-  private static int NodeRecycleCode = 1;
+  private static int NodeRecycleCode = 0;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
