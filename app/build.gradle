@@ -1,6 +1,11 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.butterknife'
 
+// 生成第三方包所需添加
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.Yemao0226' // ××××代表你github名字
+
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
