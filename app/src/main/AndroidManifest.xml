@@ -25,7 +25,6 @@
         </activity>
         <activity android:name=".statusbar.StatusBarActivity" />
         <activity android:name=".butterknife.ButterKnifeActivity" />
-        <activity android:name=".base.BaseActivity" />
         <activity android:name=".alignedtext.AlignedTextActivity" />
         <activity android:name=".permission.PermissionActivity" />
         <activity android:name=".recycleView.RecycleViewActivity" />

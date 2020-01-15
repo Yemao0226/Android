@@ -62,7 +62,7 @@ public class NormalAdapter extends RecyclerView.Adapter<NormalAdapter.ViewHolder
    * @param position
    */
   @Override
-  public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
+  public void onBindViewHolder(@NonNull final ViewHolder viewHolder, final int position) {
     viewHolder.normalText.setText(list.get(position));
 
     //如果设置了回调，则设置点击事件

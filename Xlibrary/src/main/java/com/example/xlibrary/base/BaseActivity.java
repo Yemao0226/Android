@@ -1,4 +1,4 @@
-package com.example.androidproject.base;
+package com.example.xlibrary.base;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.androidproject.R;
-import com.example.androidproject.utils.StatusBarUtils;
-import com.example.androidproject.utils.StringUtils;
+import com.example.xlibrary.utils.StatusBarUtils;
+import com.example.xlibrary.utils.StringUtils;
+import com.example.xlibrary.R;
 import com.gyf.immersionbar.ImmersionBar;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;

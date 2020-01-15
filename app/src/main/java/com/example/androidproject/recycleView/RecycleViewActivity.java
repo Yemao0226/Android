@@ -9,9 +9,9 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.androidproject.R;
-import com.example.androidproject.base.BaseActivity;
+import com.example.xlibrary.base.BaseActivity;
 import com.example.androidproject.recycleView.adapter.NormalAdapter;
-import com.example.androidproject.utils.ActivityTitleUtils;
+import com.example.xlibrary.utils.ActivityTitleUtils;
 
 import java.util.ArrayList;
 import java.util.List;

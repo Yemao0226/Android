@@ -36,7 +36,7 @@ public class NodeAdapter extends BaseMultiItemQuickAdapter<MultiItemEntity, Base
   }
 
   @Override
-  protected void convert(BaseViewHolder helper, MultiItemEntity item) {
+  protected void convert(final BaseViewHolder helper, MultiItemEntity item) {
     switch (helper.getItemViewType()){
       case TYPE_LEVEL_1:
         final Level1Item lv1 = (Level1Item) item;

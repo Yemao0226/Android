@@ -1,4 +1,4 @@
-package com.example.androidproject.statusbar;
+package com.example.xlibrary.statusbar;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -60,7 +60,6 @@ public class StatusBarUtil {
     setStatusBarLightMode(activity, Color.parseColor(color));
     setLightStatusBar(activity,dark);
   }
-
 
   /**
    * 修改状态栏颜色，支持4.4以上版本

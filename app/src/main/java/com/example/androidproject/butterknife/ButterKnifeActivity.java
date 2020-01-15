@@ -2,15 +2,14 @@ package com.example.androidproject.butterknife;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
 import com.example.androidproject.R;
-import com.example.androidproject.base.BaseActivity;
-import com.example.androidproject.utils.ActivityTitleUtils;
+import com.example.xlibrary.base.BaseActivity;
+import com.example.xlibrary.utils.ActivityTitleUtils;
 
 import butterknife.BindString;
 import butterknife.BindView;

@@ -1,18 +1,25 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
 
-
+// 生成第三方包所需添加
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.Yemao0226' // ××××代表你github名字
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
+
+
     defaultConfig {
-        applicationId "com.example.androidproject"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -28,27 +35,19 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
-
-    //官方工具包
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.material:material:1.0.0'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-
-    //引用自己的三方包
-    implementation project(':xlibrary')
 
     //注解器
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
 
-    //权限请求
-    implementation 'pub.devrel:easypermissions:3.0.0'
+    //状态栏
+    api 'com.gyf.immersionbar:immersionbar:3.0.0'
+
+    //列表
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
 }

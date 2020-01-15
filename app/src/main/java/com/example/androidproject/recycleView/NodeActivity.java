@@ -1,6 +1,5 @@
 package com.example.androidproject.recycleView;
 
-import android.app.Person;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -10,11 +9,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 import com.example.androidproject.R;
-import com.example.androidproject.base.BaseActivity;
+import com.example.xlibrary.base.BaseActivity;
 import com.example.androidproject.recycleView.adapter.NodeAdapter;
 import com.example.androidproject.recycleView.entity.Level1Item;
 import com.example.androidproject.recycleView.entity.Level2Item;
-import com.example.androidproject.utils.ActivityTitleUtils;
+import com.example.xlibrary.utils.ActivityTitleUtils;
 
 import java.util.ArrayList;
 import java.util.Random;

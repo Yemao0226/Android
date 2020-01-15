@@ -3,11 +3,11 @@ package com.example.androidproject;
 import android.os.Bundle;
 import android.view.View;
 import com.example.androidproject.alignedtext.AlignedTextActivity;
-import com.example.androidproject.base.BaseActivity;
 import com.example.androidproject.butterknife.ButterKnifeActivity;
 import com.example.androidproject.permission.PermissionActivity;
 import com.example.androidproject.recycleView.RecycleViewMenuActivity;
 import com.example.androidproject.statusbar.StatusBarActivity;
+import com.example.xlibrary.base.BaseActivity;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {

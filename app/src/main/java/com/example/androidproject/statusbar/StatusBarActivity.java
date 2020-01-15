@@ -10,7 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.example.androidproject.R;
-import com.example.androidproject.utils.ActivityTitleUtils;
+import com.example.xlibrary.statusbar.StatusBarUtil;
+import com.example.xlibrary.utils.ActivityTitleUtils;
 import com.gyf.immersionbar.ImmersionBar;
 
 /**

@@ -5,16 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
-
 import com.example.androidproject.R;
-import com.example.androidproject.base.BaseActivity;
-import com.example.androidproject.utils.ActivityTitleUtils;
-import com.example.androidproject.utils.PermissionUtils;
-
+import com.example.xlibrary.base.BaseActivity;
+import com.example.xlibrary.utils.ActivityTitleUtils;
+import com.example.xlibrary.utils.PermissionUtils;
 import java.util.List;
-
 import butterknife.BindView;
 import butterknife.OnClick;
 import pub.devrel.easypermissions.AppSettingsDialog;

@@ -1,4 +1,4 @@
-package com.example.androidproject.alignedtext;
+package com.example.xlibrary.alignedtext;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -7,10 +7,8 @@ import android.text.Layout;
 import android.text.StaticLayout;
 import android.util.AttributeSet;
 import android.widget.TextView;
-
 import androidx.annotation.Nullable;
-
-import com.example.androidproject.R;
+import com.example.xlibrary.R;
 
 /**
  * ***************************************

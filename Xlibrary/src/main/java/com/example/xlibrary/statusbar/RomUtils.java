@@ -1,4 +1,4 @@
-package com.example.androidproject.statusbar;
+package com.example.xlibrary.statusbar;
 
 import android.os.Build;
 import android.os.Environment;

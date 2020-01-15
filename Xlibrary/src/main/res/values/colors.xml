@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorStatusBar_white">#FFFFFF</color>
+    <color name="colorTitle">#00A8E1</color>
+    <color name="colorTitleText">#FFFFFF</color>
+    <color name="colorMenuText">#000000</color>
+    <color name="colorMenuLine">#F2F2F2F2</color>
+    <color name="colorCareful">#F8666666</color>
+    <color name="colorSecondLevel">#F2F2F2F2</color>
+</resources>

@@ -142,19 +142,19 @@
 
    1、暴力切割型：
 
-      <com.example.androidproject.alignedtext.AlignTextView
+      <com.example.mylibrary.alignedtext.AlignTextView
          android:id="@+id/alignedText_align"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content">
-      </com.example.androidproject.alignedtext.AlignTextView>
+      </com.example.mylibrary.alignedtext.AlignTextView>
 
    2、保留单词完整性：
 
-      <com.example.androidproject.alignedtext.EnglishTextView
+      <com.example.mylibrary.alignedtext.EnglishTextView
          android:id="@+id/alignedText_English"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content">
-      </com.example.androidproject.alignedtext.EnglishTextView>
+      </com.example.mylibrary.alignedtext.EnglishTextView>
 
 #### 四、权限请求
 分为两种：1、自己封装权限请求; 2、引用三方库

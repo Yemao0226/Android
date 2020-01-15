@@ -1,14 +1,15 @@
 package com.example.androidproject.alignedtext;
 
 import android.os.Bundle;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
 import com.example.androidproject.R;
-import com.example.androidproject.base.BaseActivity;
-import com.example.androidproject.utils.ActivityTitleUtils;
+import com.example.xlibrary.alignedtext.AlignTextView;
+import com.example.xlibrary.alignedtext.EnglishTextView;
+import com.example.xlibrary.base.BaseActivity;
+import com.example.xlibrary.utils.ActivityTitleUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;

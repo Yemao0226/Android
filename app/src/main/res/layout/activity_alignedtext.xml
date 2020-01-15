@@ -69,11 +69,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.example.androidproject.alignedtext.AlignTextView
+                <com.example.xlibrary.alignedtext.AlignTextView
                     android:id="@+id/alignedText_align"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                </com.example.androidproject.alignedtext.AlignTextView>
+                </com.example.xlibrary.alignedtext.AlignTextView>
             </LinearLayout>
         </LinearLayout>
 
@@ -104,11 +104,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.example.androidproject.alignedtext.EnglishTextView
+                <com.example.xlibrary.alignedtext.EnglishTextView
                     android:id="@+id/alignedText_English"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                </com.example.androidproject.alignedtext.EnglishTextView>
+                </com.example.xlibrary.alignedtext.EnglishTextView>
 
             </LinearLayout>
         </LinearLayout>
